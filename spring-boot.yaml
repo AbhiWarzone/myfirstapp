@@ -14,13 +14,13 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: gcr.io/<project-id>/springboot:7
+        image: 245218175547.dkr.ecr.ap-south-1.amazonaws.com/jenkins-build-demo:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
 # service type loadbalancers
 ---
-apiVersion: apps/v1
+apiVersion: v1
 kind: Service
 metadata:
   name: spring-boot-svc
